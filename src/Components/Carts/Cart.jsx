@@ -11,7 +11,7 @@ const Cart = ({cart}) => {
 
     for(const product of cart){
         if(product.quantity === 0){
-            product.quantity = 1;
+            product.quantity = 1; 
         }
         totalprice = totalprice + product.price * product.quantity;
         totalshipping = totalshipping + product.shipping
