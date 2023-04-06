@@ -3,7 +3,6 @@ import('./Cart.css')
 
 const Cart = ({cart}) => {
 
-    console.log(cart)
 
     let totalprice = 0;
     let totalshipping = 0;
