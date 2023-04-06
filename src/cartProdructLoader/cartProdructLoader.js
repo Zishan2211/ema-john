@@ -7,7 +7,6 @@ const cartProductsLoader = async () => {
     const storedCard = getShoppingCart();
     const savedCard = [];
 
-    console.log(storedCard)
     for (const id in storedCard) {
         const addProduct = products.find(product => product.id === id);
         if (addProduct) {
