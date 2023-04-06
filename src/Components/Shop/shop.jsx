@@ -21,9 +21,9 @@ const Shop = () => {
         for (const id in storeCart) {
             const addproducts = products.find(product => product.id === id)
             if (addproducts) {
-                const quantity = storeCart [id]
-                addproducts.quantity = quantity
-                savedcart.push(addproducts)
+                const quantity = storeCart[id];
+                addproducts.quantity = quantity;
+                savedcart.push(addproducts);
             }
         }
         setCart(savedcart)
