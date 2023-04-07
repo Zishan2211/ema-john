@@ -1,3 +1,21 @@
 .review-container{
     margin: 50px auto;
 }
+.proceeds{
+    text-decoration: none;
+}
+.btn-proceed2{
+    display: flex;
+    background: #FF9900;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 10 auto;
+    border-radius: 4px;
+    color: white;
+    align-items: center;
+    height: 56px;
+    font-size: 16px;
+    margin-top: 20px;
+    
+}

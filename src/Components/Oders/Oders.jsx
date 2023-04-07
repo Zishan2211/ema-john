@@ -5,6 +5,10 @@ import Products from '../Products/Products';
 import Reviewitems from '../Reviewitems/Reviewitems';
 import './Oders.css'
 import { deleteShoppingCart, removeFromDb } from '../../assets/utilities/fakedb';
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckCircle, faCreditCard } from '@fortawesome/free-solid-svg-icons'
+
 
 const Oders = () => {
     const SavedCart = useLoaderData();
@@ -37,7 +41,7 @@ const Oders = () => {
                 cart={cart}
                 hendelclearCart={hendelclearCart}
                 >
-                    <Link to='/checkout'><button className='btn-proceed'>Proceed Chekeout</button></Link>
+                    <Link className='proceeds' to='/checkout'><button className='btn-proceed2'>Proceed Chekeout <FontAwesomeIcon icon={faCreditCard} /></button></Link>
                 </Cart>
             </div>
         </div>
